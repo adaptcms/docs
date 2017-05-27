@@ -6,8 +6,8 @@
 
 ## Getting Started
 
-* [Getting Started](chapter1.md)
-* [Installation](installation.md)
+* [Getting Started](/Getting Started/getting-started.md)
+* [Installation](/Getting Started/installation.md)
 
 
 
