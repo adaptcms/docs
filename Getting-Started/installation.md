@@ -40,6 +40,10 @@ Then simply unzip the contents of the file locally. For the next step, you need 
 
 Simply upload the contents of the ZIP file, which is a mix of folders and files, to your web host.
 
+No SSH access and your PHP version isn't new enough? We highly recommend the below cloud server host. While it might be intimidating, we have an easy guide on setting up your first cloud server on [**DigitalOcean**](https://m.do.co/c/083895eaa907).
+
+[![](/assets/rsz_do_logo_horizontal_blue-3db19536.png)](https://m.do.co/c/083895eaa907)
+
 ## Permissions
 
 Permissions are one of the most important things for the install to go right.
@@ -67,8 +71,6 @@ whoami
 ```
 
 ### No SSH Access
-
-
 
 ## Running the Installer
 
