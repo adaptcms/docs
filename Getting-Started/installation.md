@@ -72,7 +72,26 @@ whoami
 
 ### No SSH Access
 
+
+
 ## Running the Installer
+
+Let's just say your site is **example.com** for simplicity sake from here on out. So you've uploaded all the files and set the permissions, you're ready for the next step. Go to the below URL, replacing your website domain of course:
+
+```
+http://www.example.com
+```
+
+If all goes well, you should see an installation setup guide that will take you through the different installation steps.
+
+If you encounter any problems, whether it's getting the CMS to install or while using it, please feel free to reach out to us:
+
+* [**Community Forums**](https://www.adaptcms.com/community)
+* [**Slack**](mailto:charliepage88@gmail.com?subject=Add me to AdaptCMS Slack)
+* [**Twitter**](https://twitter.com/adaptcms)
+* [**GitHub Issues**](https://github.com/adaptcms/AdaptCMS/issues)
+* [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704/)
+* [**AdaptCMS.com**](https://www.adaptcms.com)
 
 
 
