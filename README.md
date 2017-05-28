@@ -6,9 +6,12 @@ We try to do this by first, creating a solid "framework" of sorts. You can insta
 
 This first Alpha version is early on and we have a lot of exciting things planned. So stay tuned and see below for contact info, feel free to ask for help or give us feedback any time!
 
-
-
-
+* [**Community Forums**](https://www.adaptcms.com/community)
+* [**Slack**](mailto:charliepage88@gmail.com?subject=Add me to AdaptCMS Slack)
+* [**Twitter**](https://twitter.com/adaptcms)
+* [**GitHub Issues**](https://github.com/adaptcms/AdaptCMS/issues)
+* [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704/)
+* [**AdaptCMS.com**](#)
 
 
 
