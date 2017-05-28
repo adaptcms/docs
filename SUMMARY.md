@@ -2,7 +2,7 @@
 
 ## Basics
 
-* [Basics](/README.md)
+* [About](/README.md)
 * [Setup a Cloud Server](Basics/setup-a-cloud-server.md)
 
 ## Getting Started
