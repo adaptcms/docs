@@ -1,6 +1,6 @@
 # Installation
 
-## Install
+## Getting the Files
 
 ### With SSH Access \(Cloud Server/SSH for Shared Hositng\)
 
@@ -38,5 +38,39 @@ Then simply unzip the contents of the file locally. For the next step, you need 
 
 [![](/assets/rsz_filezilla-logo.png)](https://filezilla-project.org/download.php?type=client)
 
-**FTP**
+Simply upload the contents of the ZIP file, which is a mix of folders and files, to your web host.
+
+## Permissions
+
+Permissions are one of the most important things for the install to go right.
+
+### SSH Access
+
+Please run the following commands on the directory you've installed AdaptCMS to. This will open the permissions for the CMS to be able to write/read files, while still not allowing public users to do anything nasty to your server.
+
+```
+chown www-data:www-data  -R . # Let the web server be the owner
+find . -type d -exec chmod 755 {} \;  # Change directory permissions
+find . -type f -exec chmod 644 {} \;  # Change file permissions
+```
+
+Now, if you installed through [**Github**](https://github.com/adaptcms/adaptcms) or [**BitBucket**](https://bitbucket.org/charliepage7/adaptcms), you'll want to run this command so that pull requests are still tied to the main user account on the server:
+
+```
+chown root:root  -R . # Let the web server be the owner
+```
+
+If your account is something different, such as ubuntu if you're on AWS, replace that with root. You should see the username in the path, but if you're unsure just run this:
+
+```
+whoami
+```
+
+### No SSH Access
+
+
+
+## Running the Installer
+
+
 
