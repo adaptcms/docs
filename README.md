@@ -11,7 +11,7 @@ This first Alpha version is early on and we have a lot of exciting things planne
 * [**Twitter**](https://twitter.com/adaptcms)
 * [**GitHub Issues**](https://github.com/adaptcms/AdaptCMS/issues)
 * [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704/)
-* [**AdaptCMS.com**](#)
+* [**AdaptCMS.com**](https://www.adaptcms.com)
 
 
 
