@@ -4,6 +4,7 @@
 
 * [About](/README.md)
 * [Setup a Cloud Server](Basics/setup-a-cloud-server.md)
+* [Web Hosts](web-hosts.md)
 
 ## Getting Started
 
