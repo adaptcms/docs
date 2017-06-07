@@ -2,7 +2,7 @@
 
 ## Getting the Files
 
-### With SSH Access \(Cloud Server/SSH for Shared Hositng\)
+### With SSH Access \(Cloud Server/SSH for Shared Hosting\)
 
 There's a few options here. First, you can always use [**Github**](https://github.com/adaptcms/adaptcms) via the command line:
 
