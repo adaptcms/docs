@@ -12,3 +12,8 @@
 * [Installation](/Getting-Started/installation.md)
 * [Updating](Getting-Started/updating.md)
 
+## Get Involved
+
+* [Contributing](get-involved/contributing.md)
+* [Coding Guidelines](get-involved/coding-guidelines.md)
+
