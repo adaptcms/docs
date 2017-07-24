@@ -12,9 +12,9 @@ AdaptCMS is an open source project and for the near future will not be a profita
 
 ## Community
 
-* [**https://www.adaptcms.com/community**](https://www.adaptcms.com/community)
-* [**https://www.adaptcms.com/slack**](https://www.adaptcms.com/slack)
-* [**https://discord.gg/2az3BzZ**](https://discord.gg/2az3BzZ)
+* [**Community Forums**](https://www.adaptcms.com/community)
+* [**Slack**](https://www.adaptcms.com/slack)
+* [**Discord**](https://discord.gg/2az3BzZ)
 
 Along with github, those are our communities currently where staff and the public alike can join and get involved. While it is by no means necessary, we can coordinate and discuss better so we don't have people fixing the same bug multiple times and have a direction in place.
 
@@ -22,9 +22,9 @@ Along with github, those are our communities currently where staff and the publi
 
 If you're not sure what you can do, please feel free to ask us at one of the above communities or any of these contact methods:
 
-* charlie@adaptcms.com
-* [**https://twitter.com/adaptcms**](https://twitter.com/adaptcms)
-* [**https://www.facebook.com/AdaptCMS-104913829614704**](https://www.facebook.com/AdaptCMS-104913829614704/)
+* [**Official Site**](https://www.adaptcms.com/pages/contact)
+* [**Twitter**](https://twitter.com/adaptcms)
+* [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704)
 
 In general, here are the type of ways to contribute:
 
@@ -34,7 +34,7 @@ This is the biggest need right now. PHP developers who can help fix bugs, test a
 
 Ideally, if you are familiar with PHP frameworks and specifically, Laravel - we definitely could use your help!
 
-While anyone can have whatever role they'd like, if you are familiar with Laravel, it would be of a great help to get involved and to be a part of some discussions and conversations of the direction and future of AdaptCMS. 
+While anyone can have whatever role they'd like, if you are familiar with Laravel, it would be of a great help to get involved and to be a part of some discussions and conversations of the direction and future of AdaptCMS.
 
 To be a part of the first modern CMS to truly appeal to people from CMS newbies, to experienced veterans. Also the first CMS to not have it's focus on what engineers think people would like to have in a CMS, but to be a truly adaptable system that learns from it's users to improve.
 
@@ -84,14 +84,15 @@ And more! Just reach out, let us know either what you'd like to do - that's most
 
 #### Hope to see you soon!
 
-It's hard for an open-source project to have a small amount of contributors doing a whole lot. Everyone needs a job that brings in money, and open-source isn't usually the spot for that. It's for fun, to get experience, to help out. While we have long-term plans to turn this open-source CMS into a profitable company, to be able to have a paid staff, that's not right now. 
+It's hard for an open-source project to have a small amount of contributors doing a whole lot. Everyone needs a job that brings in money, and open-source isn't usually the spot for that. It's for fun, to get experience, to help out. While we have long-term plans to turn this open-source CMS into a profitable company, to be able to have a paid staff, that's not right now.
 
 When that does happen though, we will not be a greedy company. Paying for the necessities will come first - server costs, domain, staff, advertising and other business costs. Past that and the little extra's that come with it, that money will be used to grow the company and to help others in any way we can.
 
 Thank you.
 
-* Charles Page
-* Founder of AdaptCMS
+Charles Page
+
+Founder of AdaptCMS
 
 
 
