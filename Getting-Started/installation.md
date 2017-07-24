@@ -100,7 +100,7 @@ If all goes well, you should see an installation setup guide that will take you 
 If you encounter any problems, whether it's getting the CMS to install or while using it, please feel free to reach out to us:
 
 * [**Community Forums**](https://www.adaptcms.com/community)
-* [**Slack**](mailto:charliepage88@gmail.com?subject=Add me to AdaptCMS Slack)
+* [**Slack**](https://www.adaptcms.com/slack)
 * [**Twitter**](https://twitter.com/adaptcms)
 * [**GitHub Issues**](https://github.com/adaptcms/AdaptCMS/issues)
 * [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704/)
