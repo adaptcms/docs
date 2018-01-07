@@ -1,6 +1,6 @@
 # PHP Developers
 
-### Welcome! If you're a PHP developer and wanting to get involved, we'll explain all that you need to do to get started. If you haven't reached out to the AdaptCMS team, we'd recommend that you follow this guide first and then reach out to us at any of the below sources:
+Welcome! If you're a PHP developer and wanting to get involved, we'll explain all that you need to do to get started. If you haven't reached out to the AdaptCMS team, we'd recommend that you follow this guide first and then reach out to us at any of the below sources:
 
 * [**Community Forums**](https://www.adaptcms.com/community)
 * [**Slack**](https://www.adaptcms.com/slack)
@@ -61,6 +61,4 @@ When a card is under "Work", we have this workflow:
 * Done \(feature has been worked on, reviewed and has been approved and pushed up\)
 
 To move a card from step-to-step, click on the 3 dots in the top right corner of the card and click on "Move". Then simply select the "Column" it should move to and click the big "Move" button and then you're done.
-
-
 
