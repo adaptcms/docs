@@ -16,6 +16,7 @@
 
 * [Contributing](get-involved/contributing.md)
 * [Coding Guidelines](get-involved/coding-guidelines.md)
+* [PHP Developers](get-involved/php-developers.md)
 
 ## Technology
 
