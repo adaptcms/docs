@@ -23,7 +23,7 @@ Okay, so if you type in "composer" into your terminal for your web server, you s
 If not, it may not be installed, see the above guide. If it is installed, navigate to the root of your site folder and run this command:
 
 ```
-composer update
+composer update --lock
 ```
 
 That should be it!
