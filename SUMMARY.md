@@ -1,16 +1,18 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Basics
 
-* [About](/README.md)
-* [Setup a Cloud Server](Basics/setup-a-cloud-server.md)
-* [Web Hosts](web-hosts.md)
+* [About](basics/about.md)
+* [Setup a Cloud Server](basics/setup-a-cloud-server.md)
+* [Web Hosts](basics/web-hosts.md)
 
 ## Getting Started
 
-* [Requirements](Getting-Started/requirements.md)
-* [Installation](/Getting-Started/installation.md)
-* [Updating](Getting-Started/updating.md)
+* [Requirements](getting-started/requirements.md)
+* [Installation](getting-started/installation.md)
+* [Updating](getting-started/updating.md)
 
 ## Get Involved
 

@@ -16,7 +16,7 @@ If you don't already have an account on Github, please [**sign up here**](https:
 
 [**https://github.com/adaptcms/AdaptCMS**](https://github.com/adaptcms/AdaptCMS)
 
-Clone the site down to your local environment, make sure you're on the 4.0 branch and follow the [**installation**](//Getting-Started/installation.md) docs. Once the CMS is installed locally, you're ready for the next step.
+Clone the site down to your local environment, make sure you're on the 4.0 branch and follow the [**installation**](../getting-started/installation.md) docs. Once the CMS is installed locally, you're ready for the next step.
 
 ## Take a look around
 

@@ -13,5 +13,3 @@ Below you will find the requirements necessary to run AdaptCMS Alpha. Since the 
 * Apache, NGINX
 * URL Rewriting enabled \(mod\_rewrite, try\_files, etc\)
 
-
-

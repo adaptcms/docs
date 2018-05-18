@@ -1,4 +1,4 @@
-# Introduction
+# About
 
 The dream of AdaptCMS is a content management system that is like a sandbox. To be able to build any type of site you want and if you're a developer, to be able to create additional functionality easily.
 

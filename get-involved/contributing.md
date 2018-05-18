@@ -94,5 +94,3 @@ Charles Page
 
 Founder of AdaptCMS
 
-
-
