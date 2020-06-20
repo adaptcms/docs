@@ -10,9 +10,9 @@ Welcome! If you're a PHP developer and wanting to get involved, we'll explain al
 * [**Email**](mail:charlie@adaptcms.com)
 * [**Contact Form**](https://www.adaptcms.com/pages/contact)
 
-## Github
+## 
 
-If you don't already have an account on Github, please [**sign up here**](https://github.com/join?source=header-home). Once you sign up, or you already have an account there, head over to the AdaptCMS github page:
+If you don't already have an account on GitHub, please [**sign up here**](https://github.com/join?source=header-home). Once you sign up, or you already have an account there, head over to the AdaptCMS GitHub page:
 
 [**https://github.com/adaptcms/AdaptCMS**](https://github.com/adaptcms/AdaptCMS)
 
@@ -28,13 +28,13 @@ We use slack to talk about the CMS and generally as the best place to keep in co
 
 [**Slack**](https://www.adaptcms.com/slack)
 
-After you sign up and login to Slack, check out there apps. They have one for the desktop \(Windows, OSX and linux!\) and for Android/IO phone/tablet devices.
+After you sign up and login to Slack, check out there apps. They have one for the desktop \(Windows, OSX and Linux!\) and for Android/IO phone/tablet devices.
 
 ## Reach Out
 
 At this point, go ahead and slack @charliepage that you'd like to help out and provide us with the following information:
 
-* Github username
+* GitHub username
 * If you want an email forwarder at the @adaptcms.com email domain, provide the desired username and what email it should go to
 * Your name
 

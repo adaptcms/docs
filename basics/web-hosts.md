@@ -8,18 +8,17 @@ User contributed notes on various web host that play well or don't play with wit
 
 ## Supported Hosts
 
-Below is a list of web hosts that we have confirmed, as of the last released version, should work fine with AdaptCMS:
+Any linux based server with a fairly up to date version of it's distro, and CLI access shold work fine. Below is a more fine list of web hosts that _should_ work fine:
 
+* AWS - [https://aws.amazon.com](https://aws.amazon.com/\)
+* Digital Ocean - [https://www.digitalocean.com](https://www.digitalocean.com/\)
 * A Small Orange - [http://asmallorange.com](http://asmallorange.com\)
 * ArcusTech - [http://arcustech.com](http://arcustech.com\)
-* AWS - [https://aws.amazon.com](https://aws.amazon.com/\)
 * Azure - [https://azure.microsoft.com](https://azure.microsoft.com/\)
-* Digital Ocean - [https://www.digitalocean.com](https://www.digitalocean.com/\)
-* Digital Ocean \(One-Click LAMP Stack\) - [https://www.digitalocean.com/features/one-click-apps](https://www.digitalocean.com/features/one-click-apps/%29\)
 * Digital Pacific - [http://www.digitalpacific.com.au/hosting](http://www.digitalpacific.com.au/hosting/\) - Sydney, Australia
 * Google Cloud Platform - [https://cloud.google.com](https://cloud.google.com/\)
 * HostGator - [http://www.hostgator.com](http://www.hostgator.com/\)
-* Laravel Forge\]\([https://forge.laravel.com](https://forge.laravel.com/\)
+* Laravel Forge - [https://forge.laravel.com](https://forge.laravel.com/\)
 * Linode - [http://linode.com](http://linode.com\)
 * Media Temple \(dv\) - [http://mediatemple.net](http://mediatemple.net\)
 * Media Temple \(grid\) [http://mediatemple.net](http://mediatemple.net\)
@@ -32,7 +31,7 @@ Below is a list of web hosts that we have confirmed, as of the last released ver
 
 ## Hosts Not Supported
 
-You should probably avoid these. It doesn't mean it's not possible, but will likely require support tickets to enabled PHP modules like \`mcrypt\`, \`mbstring\`, and so on.
+You should probably avoid these. It doesn't mean it's not possible, but will likely require support tickets to enabled PHP modules like \`mcrypt\`, \`mbstring\`, and so on, as well as CLI support.
 
 * Go Daddy - [http://godaddy.com](http://godaddy.com\) - doesn't meet server requirements
 * NameCheap - [http://namecheap.com](http://namecheap.com\)

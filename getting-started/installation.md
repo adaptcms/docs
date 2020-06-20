@@ -1,108 +1,30 @@
 # Installation
 
-## Getting the Files
+## Setup
 
-### With SSH Access \(Cloud Server/SSH for Shared Hosting\)
-
-There's a few options here. First, you can always use [**Github**](https://github.com/adaptcms/adaptcms) via the command line:
+After ensuring your web server meets the requirements, you will also need NPM/Yarn installed, as well as composer:
 
 ```text
-git clone git@github.com:adaptcms/AdaptCMS.git
+composer require charliepage88/adaptcms
 ```
 
-You can also grab the latest version, at any time below:
+After composer is finished, enter the `adaptcms` directory and modify your `.env` file with your database credentials, mail, anything that you see that you can enter credentials, or to choose drivers.
+
+Once your `.env` file has been saved, run this command to trigger the initial install, as well as setting up your first admin account:
 
 ```text
-wget https://s3.amazonaws.com/adaptcms/latest.zip && unzip latest.zip
+php artisan cms:install
 ```
 
-Or if you would like to get the newest stable version:
-
-```text
-wget https://s3.amazonaws.com/adaptcms/stable.zip && unzip latest.zip
-```
-
-### No SSH Access \(Shared Hosting\)
-
-So, assuming your PHP version is newer than 5.6.4 you can simply download one of the ZIP files below:
-
-**Stable**
-
-[https://s3.amazonaws.com/adaptcms/stable.zip](https://s3.amazonaws.com/adaptcms/stable.zip)
-
-**Latest**
-
-[https://s3.amazonaws.com/adaptcms/latest.zip](https://s3.amazonaws.com/adaptcms/latest.zip)
-
-Then simply unzip the contents of the file locally. For the next step, you need an FTP client. We recommend:
-
-![](../.gitbook/assets/rsz_filezilla-logo.png)
-
-Simply upload the contents of the ZIP file, which is a mix of folders and files, to your web host.
-
-No SSH access and your PHP version aren't new enough? We highly recommend the below cloud server host. While it might be intimidating, we have an easy guide [**DigitalOcean**](https://m.do.co/c/083895eaa907).
+If you're looking for a new web host by the way, we highly recommend [**DigitalOcean**](https://m.do.co/c/083895eaa907)!
 
 ![](../.gitbook/assets/rsz_do_logo_horizontal_blue-3db19536.png)
 
 ## Permissions
 
-Permissions are one of the most important things for the install to go right.
+We know setting permissions sucks, but one day we sat down and found a good set that worked for us very well. In the root folder there is a `laravel_permissions.sh` file that you can run. Please note before running this command to ensure your apache/nginx username matches `www-data` in the file, and to either create, or edit the group name `dev` that is in the file. We've found having a properly setup user with group permissions to be a big key to getting everything working right.
 
-### SSH Access
+If you are unsure of how to handle group management in the command line, we have a tutorial setup on this. Note in the example the group name being used is `devs`, but that name can be quickly replaced in the permissions bash file:
 
-Please run the following commands in the directory you've installed AdaptCMS to. This will open the permissions for the CMS to be able to write/read files, while still not allowing public users to do anything nasty to your server.
-
-```text
-chown www-data:www-data  -R . # Let the web server be the owner
-find . -type d -exec chmod 755 {} \;  # Change directory permissions
-find . -type f -exec chmod 644 {} \;  # Change file permissions
-```
-
-Now, if you installed through [**Github**](https://github.com/adaptcms/adaptcms) or [**BitBucket**](https://bitbucket.org/charliepage7/adaptcms), you'll want to run this command so that pull requests are still tied to the main user account on the server:
-
-```text
-chown root:www-data  -R . # Let the web server be the owner
-```
-
-If your account is something different, such as ubuntu if you're on AWS, replace that with root. You should see the username in the path, but if you're unsure just run this:
-
-```text
-whoami
-```
-
-### No SSH Access
-
-Through your FTP editor, please edit the permissions of the folders by right-clicking on a folder. The following folders need the permissions **755**:
-
-* app/Modules
-* bootstrap/cache
-* public/storage
-* public/themes
-* public/uploads
-* storage
-
-Secondly, please change the permissions for the following files in the root directory to **644**:
-
-* .commit\_hash
-* .env
-* .version
-
-## Running the Installer
-
-Let's just say your site is **example.com** for simplicity sake from here on out. So you've uploaded all the files and set the permissions, you're ready for the next step. Go to the below URL, replacing your website domain of course:
-
-```text
-http://www.example.com
-```
-
-If all goes well, you should see an installation setup guide that will take you through the different installation steps.
-
-If you encounter any problems, whether it's getting the CMS to install or while using it, please feel free to reach out to us:
-
-* [**Community Forums**](https://www.adaptcms.com/community)
-* [**Slack**](https://www.adaptcms.com/slack)
-* [**Twitter**](https://twitter.com/adaptcms)
-* [**GitHub Issues**](https://github.com/adaptcms/AdaptCMS/issues)
-* [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704/)
-* [**AdaptCMS.com**](https://www.adaptcms.com)
+[https://charliepage.gitbook.io/book/tutorials/setup-ubuntu-server-2020\#non-root-user-setup](https://charliepage.gitbook.io/book/tutorials/setup-ubuntu-server-2020#non-root-user-setup)
 

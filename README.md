@@ -2,14 +2,7 @@
 
 The dream of AdaptCMS is a content management system that is like a sandbox. To be able to build any type of site you want and if you're a developer, to be able to create additional functionality easily.
 
-We try to do this by first, creating a solid "framework" of sorts. You can install/upgrade/update plugins, themes and the CMS itself, in the admin. The latest and best software is used, including the Laravel PHP framework, Semantic UI CSS framework, VueJS 2 framework and others.
+We do this by implementing a modular system that allows us, as well as developers to quickly be able to build plugins, fields, and other types of content. Our upcoming new version continues the tradition of using Laravel and VueJS, but what really makes a difference this time around is using TailwindCSS for the UI and InertiaJS for quickly building web pages.
 
-This first Alpha version is early on and we have a lot of exciting things planned. So stay tuned and see below for contact info, feel free to ask for help or give us feedback any time!
-
-* [**Community Forums**](https://www.adaptcms.com/community)
-* [**Slack**](https://www.adaptcms.com/slack)
-* [**Twitter**](https://twitter.com/adaptcms)
-* [**GitHub Issues**](https://github.com/adaptcms/AdaptCMS/issues)
-* [**Facebook**](https://www.facebook.com/AdaptCMS-104913829614704/)
-* [**AdaptCMS.com**](https://www.adaptcms.com)
+At the time of this writing, a beta version is in the works and will be complimented with the documentation listed here so any developer may use the CMS.
 

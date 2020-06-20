@@ -4,7 +4,7 @@
 
 ## Basics
 
-* [About](basics/about.md)
+* [Terminology](basics/terminology.md)
 * [Setup a Cloud Server](basics/setup-a-cloud-server.md)
 * [Web Hosts](basics/web-hosts.md)
 
@@ -13,6 +13,15 @@
 * [Requirements](getting-started/requirements.md)
 * [Installation](getting-started/installation.md)
 * [Updating](getting-started/updating.md)
+
+## Core Packages
+
+* [Auth](core-packages/auth.md)
+* [Base](core-packages/base.md)
+* [Fields](core-packages/fields.md)
+* [Modules](core-packages/modules.md)
+* [Pages](core-packages/pages.md)
+* [Plugins](core-packages/plugins.md)
 
 ## Get Involved
 

@@ -16,7 +16,7 @@ AdaptCMS is an open source project and for the near future will not be a profita
 * [**Slack**](https://www.adaptcms.com/slack)
 * [**Discord**](https://discord.gg/2az3BzZ)
 
-Along with github, those are our communities currently where staff and the public alike can join and get involved. While it is by no means necessary, we can coordinate and discuss better so we don't have people fixing the same bug multiple times and have a direction in place.
+Along with GitHub, those are our communities currently where staff and the public alike can join and get involved. While it is by no means necessary, we can coordinate and discuss better so we don't have people fixing the same bug multiple times and have a direction in place.
 
 ## What can I do?
 
@@ -42,7 +42,7 @@ To be a part of the first modern CMS to truly appeal to people from CMS newbies,
 
 HTML work will be expansive and necessary. Styling by front-end, rather than PHP developers, would be a big step up. VueJS experience is very helpful, but not necessary.
 
-Those with experience with mockups would also help, ideally we would like to have a thorough tested and discussed workflow of each part of the site at some point.
+Those with experience with mock-ups would also help, ideally we would like to have a thorough tested and discussed workflow of each part of the site at some point.
 
 ### Designers
 
@@ -52,7 +52,7 @@ While we predominantly use a front-end CSS framework to be the main design of th
 
 #### General Feedback
 
-If you don't know anything at all about CMS's, but are interested, you can get involved still! The more information we have, the more we understand different types of users - the better, and a more inclusive system we can build. Reach out to us any way you'd like and let us know what's confusing you, what you like about AdaptCMS, what you don't like about it.
+If you don't know anything at all about software like this, but are interested, you can get involved still! The more information we have, the more we understand different types of users - the better, and a more inclusive system we can build. Reach out to us any way you'd like and let us know what's confusing you, what you like about AdaptCMS, what you don't like about it.
 
 Whether you're a PHP developers, or a small business owner trying to make a better site. We want to hear from you!
 
