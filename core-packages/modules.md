@@ -24,3 +24,22 @@ We also have, commented out, several examples of code for getter/setter attribut
 
 One other helpful method is an example of query filtering for a relation field. An example with a video game website - you have a relationship where a "console" hasMany "game" models. However, you want to filter what consoles are shown when an admin goes to create a game. Utilizing the `fieldQueryFilterConsole()` method would allow you to customize this for the create/edit pages in the admin.
 
+**Public**
+
+While it is mostly up to the developer to build the public side of their website, we want to make it as easy as possible to do so, while not losing out on the ability for customization. Whenever a module is created, two vue components are created under the `Site` package to be modified at will.
+
+```text
+/packages/Adaptcms/Site/ui/pages/modules/{moduleNamePlural}/index.vue
+/packages/Adaptcms/Site/ui/pages/modules/{moduleNamePlural}/show.vue
+```
+
+The routes for these two methods are as follows, including a route for search:
+
+```text
+/post/{moduleNamePlural}
+/post/{moduleNamePlural}/{itemId}
+/search/post/{moduleNamePlural}?query={searchInput}
+```
+
+An example could be /post/games, or /post/games/1.
+
