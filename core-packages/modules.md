@@ -37,9 +37,9 @@ The routes for these two methods are as follows, including a route for search:
 
 ```text
 /post/{moduleNamePlural}
-/post/{moduleNamePlural}/{itemId}
+/post/{moduleNamePlural}/{itemSlug}
 /search/post/{moduleNamePlural}?query={searchInput}
 ```
 
-An example could be /post/games, or /post/games/1.
+An example could be /post/games, or /post/games/halo-2.
 
