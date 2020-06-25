@@ -1,6 +1,6 @@
 # Requirements
 
-Below you will find the requirements necessary to run AdaptCMS. Since the CMS is using modern technologies, the versions of software required are newer than normal. The good news is, outside of the ZIP PHP extension, all the requirements are based on L[**aravel**](https://laravel.com/docs/5.4#server-requirements).
+Below you will find the requirements necessary to install and run this software. A majority of the requiredments are what [**Laravel**](https://laravel.com/docs/5.4#server-requirements) ****requires, with a few exceptions:
 
 * PHP &gt;= 7.2.0
 * OpenSSL PHP Extension
@@ -14,4 +14,16 @@ Below you will find the requirements necessary to run AdaptCMS. Since the CMS is
 * MySQL Server/Client
 * Apache, NGINX
 * URL Rewriting enabled \(mod\_rewrite, try\_files, etc\)
+
+#### Lerna
+
+To manage `npm` dependencies across different packages, we use Lerna. Please install this as well, before installation:
+
+```text
+yarn global add lerna
+
+or
+
+npm install --global lerna
+```
 
