@@ -22,6 +22,8 @@ public $storeRules = [
 ];
 ```
 
+If your validation needs to be dynamic, then you can instead hook into the `getStoreRules` and the `getUpdateRules` methods. The params depend on if it's a page field, or a module field. `getStoreRules($moduleField = null, $pageField = null)` is what the declarations look like. Basically, it will be one or the other.
+
 The other important methods include a `getValue()` and `setValue($value)` methods. This will be the default getter/setter for any module/page fields created. If a developer modifies the module file this field is attached to, a mutator would override the getValue/setValue methods.
 
 The `migrationCommand` method contains a string value of the migration command that will be ran upon creation of a module field, or a page field. The example should be pretty self-explanatory. Just keep in mind to go by the Laravel documentation on column modifiers, ensure `->nullable()` is attached unless the field is built for a specific website, and keep the same syntax standard seen in the default.
@@ -36,7 +38,7 @@ When a custom module item is saved and has a module field linked to your field t
 
 Another relationship related method is `withLoadedRelationships`, although it can be used for other purposes. Primarily it is used to dynamically define relationships, [as first introduced in Laravel 7](https://laravel.com/docs/7.x/eloquent-relationships#dynamic-relationships). Another important usage is loading relationships that will be returned to the VueJS layer. This second piece can be of great use for those building fields with specific purposes - such as a field for a particular website to achieve specific results. That way your code is still abstracted from the core CMS code, but can still load in the data you need.
 
-The `withFormMeta` is yet another helper method, this one allowing a field to pass in data within the create/edit actions for a custom module. An example being that you need to pass in possible selectable values from the database to a select field.
+The `withFormMeta` is yet another helper method, this one allowing a field to pass in data within the create/edit actions for a custom module. An example being that you need to pass in possible select-able values from the database to a select field.
 
 `afterModuleRename` is called after a module name has been changed. This method looks for any field classes linked to the module in question with this available method. The individual `ModuleField` model class is passed through. An example use is with the `FieldRelationManyToMany` field that needs to rename the join table/column references.
 
