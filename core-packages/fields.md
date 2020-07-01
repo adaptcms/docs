@@ -2,7 +2,9 @@
 
 Fields are a sort of "field type" grouping which is used for Modules and Pages. A basic example is a "Text" field which is a simple text input and is used as a module field upon creation of a module.
 
-#### CLI Commands
+### CLI Commands
+
+#### Create Field
 
 To create a new "field" which can become a GitHub package later on, simply run this:
 
@@ -12,7 +14,15 @@ php artisan cms:field:create {vendor} {package}
 
 Upon creation, you will find a new folder path under `/packages` following the vendor/package naming you entered. Creating a field in the admin ends in the same result. Within this folder there are several key files.
 
-#### Field Class File
+Sync UI components
+
+When creating a field, if you make any changes within the default components inside of `/packages/{vendor/Field{package}/ui/field/` - you must run a CLI sync command for your changes to take effect within your website. Simply run this below with yarn/npm running, or build afterwards:
+
+```text
+php artisan cms:fields:sync
+```
+
+### Field Class File
 
 First, under `/packages/{vendor}/Field{package}/src/Field/Field{package}.php` is the primary method for API usage where you may adjust default settings. `$storeRules` and `$updateRules` are default validation rules that will be passed in when the field is used with a module, or page. An example would be an email field which would pass in an attribute to assure a proper email address:
 
