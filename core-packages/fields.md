@@ -14,7 +14,7 @@ php artisan cms:field:create {vendor} {package}
 
 Upon creation, you will find a new folder path under `/packages` following the vendor/package naming you entered. Creating a field in the admin ends in the same result. Within this folder there are several key files.
 
-Sync UI components
+#### Sync UI components
 
 When creating a field, if you make any changes within the default components inside of `/packages/{vendor/Field{package}/ui/field/` - you must run a CLI sync command for your changes to take effect within your website. Simply run this below with yarn/npm running, or build afterwards:
 
