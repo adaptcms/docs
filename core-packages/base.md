@@ -41,3 +41,23 @@ Admin Utility Mixin: `/packages/Adaptcms/Base/ui/mixins/AdminUtilityMixin.js`
 
 Admin Form Mixin: `/packages/Adaptcms/Base/ui/mixins/AdminFormMixin.js`
 
+### Package Fields
+
+A large piece of functionality is package fields. Currently this links a field to a specific page, or a field to a specific module. The package field then serves as the director of storing custom data into a pages table, or in the case of modules, a particular modules table \(such as a column "overall\_rating" on a games table\), as an example.
+
+It also serves to be usable by plugins of any sort. To implement this functionality into a plugin you are creating, or better understand this feature, we will document how to do so and what configuration is available with a lot of flexibility. For example, the relation to pages is one where there is only one pages table with all custom columns on that one table. Whereas with modules, there is a table for each module with it's respective package fields contained on it's own table, yet both itself and Pages use Package Fields.
+
+**getPrimaryFieldAttribute\(\)**
+
+A primary field should be defined in your model of choice for implementation. If you have a column in your table that is set in stone, such as "name" for the pages table, simply return a stdClass with the `column_name` object property value returning this column name.
+
+**shouldCreateColumnMigration\(PackageField $packageField\) \(optional method\)**
+
+**shouldRenameColumnMigration\(PackageField $packageField\) \(optional method\)**
+
+**shouldDropColumnMigration** **method\(PackageField $packageField\) \(optional method\)**
+
+If you want to use conditions to determine if the migration for creating a column for the package field should be made, then implement any \(or all\) of these methods. Named respectively for creation of a column, renaming a column \(on update of a package field name\), or dropping a column \(upon deletion of a package field\).
+
+
+
