@@ -62,6 +62,16 @@ class MyClassName extends Model
 }
 ```
 
+**Required columns**
+
+* id
+* name
+* slug \(this will be filled automatically when using the above trait\)
+
+**toSearchableArray\(\)**
+
+Per the [Laravel Scout docs](https://laravel.com/docs/scout), please create this method.
+
 **getPrimaryFieldAttribute\(\)**
 
 A primary field should be defined in your model of choice for implementation. If you have a column in your table that is set in stone, such as "name" for the pages table, simply return a stdClass with the `column_name` object property value returning this column name.
@@ -79,4 +89,59 @@ If you want to use conditions to determine if the migration for creating a colum
 **putModelFileContents\(string $contents\)**
 
 These two methods are necessary for fields such as `FieldFile` and `FieldImage` which require traits to be inserted into the model file. An example with Pages would be pointing to the Page model file as a fallback, but we avoid this for the package by applying the required implements and use call described in the [Spatie Media Library docs, which you may do as well](https://docs.spatie.be/laravel-medialibrary/v8/basic-usage/preparing-your-model/). For modules, we use the `Storage` helper to return and put contents into the path `/app/Modules/{moduleName}.php`. Simple as that!
+
+**fillCustomData\(array $data\)**
+
+This method is used to set data from package fields before saving the record in the database. The best way to utilize this method is looking at the code for this within the `Modules` and `Pages` packages. Here are those model paths:
+
+```text
+/packages/Adaptcms/Pages/Model/Page.php
+/packages/Adaptcms/Modules/Model/Module.php
+```
+
+**syncSearch\(\)**
+
+Upon creating a package field, renaming, or dropping - the search index will need to be updated. Here is an example below, from the `Pages` package:
+
+```text
+/**
+* Sync Search
+*
+* @return void
+*/
+public function syncSearch()
+{
+  // run scout import
+  $items = $this->all();
+
+  $items->searchable();
+}
+```
+
+**Admin Link Show**
+
+A package that implements the package fields functionality should be searchable. To that end, a standard that is in use for all searchable packages is in place. Here again we show below how the `Pages` package implements this:
+
+```text
+use URL;
+
+/**
+* @var array
+*/
+protected $appends = [
+  'admin_link_show'
+];
+
+/**
+* Get Admin Link Show Attribute
+*
+* @return string
+*/
+public function getAdminLinkShowAttribute()
+{
+  return URL::route('pages.admin.show', [
+    'page' => $this->id
+  ]);
+}
+```
 

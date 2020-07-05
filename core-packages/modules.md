@@ -20,13 +20,13 @@ When creating a module, a module file will also be created within this path - `/
 
 The `indexQueryFilter()` method can be used to modify the query for the index page of a module within the admin. You receive request data, as well as the Eloquent query object, which you also will return. Any filtering here may be done.
 
-We also have, commented out, several examples of code for getter/setter attributes of module fields. Keep in mind these overwrite any default getter/setter on a specific Field file.
+We also have, commented out, several examples of code for getter/setter attributes of package fields. Keep in mind these overwrite any default getter/setter on a specific Field file.
 
 One other helpful method is an example of query filtering for a relation field. An example with a video game website - you have a relationship where a "console" hasMany "game" models. However, you want to filter what consoles are shown when an admin goes to create a game. Utilizing the `fieldQueryFilterConsole()` method would allow you to customize this for the create/edit pages in the admin.
 
 **Public**
 
-While it is mostly up to the developer to build the public side of their website, we want to make it as easy as possible to do so, while not losing out on the ability for customization. Whenever a module is created, two vue components are created under the `Site` package to be modified at will.
+While it is mostly up to the developer to build the public side of their website, we want to make it as easy as possible to do so, while not losing out on the ability for customization. Whenever a module is created, two Vue components are created under the `Site` package to be modified at will.
 
 ```text
 /packages/Adaptcms/Site/ui/pages/modules/{moduleNamePlural}/index.vue
