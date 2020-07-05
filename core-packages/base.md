@@ -47,6 +47,21 @@ A large piece of functionality is package fields. Currently this links a field t
 
 It also serves to be usable by plugins of any sort. To implement this functionality into a plugin you are creating, or better understand this feature, we will document how to do so and what configuration is available with a lot of flexibility. For example, the relation to pages is one where there is only one pages table with all custom columns on that one table. Whereas with modules, there is a table for each module with it's respective package fields contained on it's own table, yet both itself and Pages use Package Fields.
 
+**Add new trait usage**
+
+To start off with, you need the trait to implement some methods automatically for you:
+
+```text
+<?php
+
+use Adaptcms\Base\Traits\IsPackageFieldOwner;
+
+class MyClassName extends Model
+{
+  use IsPackageFieldOwner;
+}
+```
+
 **getPrimaryFieldAttribute\(\)**
 
 A primary field should be defined in your model of choice for implementation. If you have a column in your table that is set in stone, such as "name" for the pages table, simply return a stdClass with the `column_name` object property value returning this column name.
@@ -59,5 +74,9 @@ A primary field should be defined in your model of choice for implementation. If
 
 If you want to use conditions to determine if the migration for creating a column for the package field should be made, then implement any \(or all\) of these methods. Named respectively for creation of a column, renaming a column \(on update of a package field name\), or dropping a column \(upon deletion of a package field\).
 
+**getModelFileContents\(\)**
 
+**putModelFileContents\(string $contents\)**
+
+These two methods are necessary for fields such as `FieldFile` and `FieldImage` which require traits to be inserted into the model file. An example with Pages would be pointing to the Page model file as a fallback, but we avoid this for the package by applying the required implements and use call described in the [Spatie Media Library docs, which you may do as well](https://docs.spatie.be/laravel-medialibrary/v8/basic-usage/preparing-your-model/). For modules, we use the `Storage` helper to return and put contents into the path `/app/Modules/{moduleName}.php`. Simple as that!
 
