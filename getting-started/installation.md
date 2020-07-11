@@ -10,6 +10,13 @@ composer require charliepage88/adaptcms
 
 After composer is finished, enter the `adaptcms` directory and modify your `.env` file with your database credentials, mail, anything that you see that you can enter credentials, or to choose drivers.
 
+Next, run composer & npm/yarn to install the dependencies:
+
+```text
+composer install
+yarn OR npm install
+```
+
 Once your `.env` file has been saved, run this command to trigger the initial install, as well as setting up your first admin account:
 
 ```text
