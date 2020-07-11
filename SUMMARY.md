@@ -23,6 +23,10 @@
 * [Pages](core-packages/pages.md)
 * [Plugins](core-packages/plugins.md)
 
+## Advanced
+
+* [UI](advanced/ui.md)
+
 ## Get Involved
 
 * [Contributing](get-involved/contributing.md)
