@@ -27,7 +27,7 @@ After composer is completed, copy the `.env.example` file to `.env`. Open up thi
 php artisan cms:install
 ```
 
-If you're looking for a new web host by the way, we highly recommend [**DigitalOcean**](https://m.do.co/c/083895eaa907)!
+If you're looking for a new web host, by the way, we highly recommend [**DigitalOcean**](https://m.do.co/c/083895eaa907)!
 
 ![](../.gitbook/assets/rsz_do_logo_horizontal_blue-3db19536.png)
 
