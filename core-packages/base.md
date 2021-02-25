@@ -145,3 +145,31 @@ public function getAdminLinkShowAttribute()
 }
 ```
 
+**Global Warnings**
+
+Packages may take advantage of a global warning system that stores messages in a session and will return them within the admin UI.
+
+Use cases will vary, but one example is an API key not being entered in for a new field type that requires it. You'll want to alert any admins so they can easily fix this issue. To get started, below is an example of creating a warning - note, a URL is optional:
+
+```text
+use Adaptcms\Base\Models\GlobalWarning;
+
+GlobalWarning::storeWarning(
+  'enter-a-unique-warning-key-here',
+  'This is a test warning that should be taken very seriously!',
+  route('route.name.here')
+);
+```
+
+Once a user has taken the required action to fix this issue, you will want to remove the warning. Simply do the below:
+
+```text
+GlobalWarning::deleteWarning('enter-your-unique-warning-key-here');
+```
+
+That's it! Messages will appear on every admin page until the session has expired/been flushed, or until the warning has been removed with the code above. One other utility you may require is to check if the warning is active for your package - here's how to do that below:
+
+```text
+GlobalWarning::hasWarning('enter-your-unique-warning-key-here');
+```
+
