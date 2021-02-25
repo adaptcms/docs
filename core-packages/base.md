@@ -167,7 +167,7 @@ Once a user has taken the required action to fix this issue, you will want to re
 GlobalWarning::deleteWarning('enter-your-unique-warning-key-here');
 ```
 
-That's it! Messages will appear on every admin page until the session has expired/been flushed, or until the warning has been removed with the code above. One other utility you may require is to check if the warning is active for your package - here's how to do that below:
+That's it! Messages will appear on every admin page until the session has expired/been flushed, or until the warning has been removed with the code above - otherwise if the user deletes the warning. One other utility you may require is to check if the warning is active for your package - here's how to do that below:
 
 ```text
 GlobalWarning::hasWarning('enter-your-unique-warning-key-here');
