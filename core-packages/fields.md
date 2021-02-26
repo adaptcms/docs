@@ -106,3 +106,41 @@ Used for the index & show pages within the admin panel for a created package.
 
 This is used anywhere a package module entry, which is related to this field, returns its value. An example might be returning a google maps image for a google places address picker field.
 
+**Field Configuration**
+
+A field, or field type, may require custom configuration that the user needs to use - such as providing an API key. While this could be hard-coded in, we provide an easy built-in way to accomplish this.
+
+For the field `FieldPlace`, we need to do just that, have the user provide a Google API Key for use with Google Places. Here is our implementation as an example below:
+
+```text
+class FieldPlace extends FieldType
+{
+  /**
+  * @var array
+  */
+  public $defaultSettings = [
+    'options' => [
+      'is_sortable'        => false,
+      'is_searchable'      => false,
+      'is_required_create' => false,
+      'is_required_edit'   => false
+    ],
+    'action_rules' => [
+      'index'  => false,
+      'create' => true,
+      'edit'   => true,
+      'show'   => true,
+      'search' => false
+    ],
+    'config' => [
+      'google_api_key' => null
+    ]
+  ];
+```
+
+The relevant part is the `config` array key. Simply pass in key and default values \(or null\), then a settings page will be viewable within the fields admin section - you'll see a pink button with a cog icon where the user can then put in their configuration.
+
+You will also see above an `options` array - this can also be configured to set defaults when a package field is created from your field type. Being a location lookup field, we don't want to require the field by default, nor allow it to be sortable or searchable \(the former could work though\).
+
+The other array key is `action_rules` which enable, or disable showing the field on the relevant page. With the place field, we don't want it showing on the index page nor the search, but should be shown on the create, edit, and show pages when browsing a module.
+
