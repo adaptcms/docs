@@ -1,6 +1,6 @@
 # Site Types
 
-Site types are a way to quickly set up your own category of website. The first site type we have is `PizzaSiteType`, which allows someone who either owns their own pizza restaurant or is making a website for a pizza company, to have their very own pizza website running in moments. Developers can then customize the public website, and otherwise, content management is already setup.
+Site types are a way to quickly set up your own category of website. The first site type we have is `SiteTypePizza`, which allows someone who either owns their own pizza restaurant or is making a website for a pizza company, to have their very own pizza website running in moments. Developers can then customize the public website, and otherwise, content management is already setup.
 
 ### Activating a Site Type
 
