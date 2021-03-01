@@ -22,6 +22,7 @@
 * [Modules](core-packages/modules.md)
 * [Pages](core-packages/pages.md)
 * [Plugins](core-packages/plugins.md)
+* [Site Types](core-packages/site-types.md)
 
 ## Advanced
 
