@@ -14,7 +14,13 @@ Coming soon...
 
 **CLI Command**
 
-Coming soon...
+To generate a site type locally through the command line, we have a simple way to do this:
+
+```text
+php artisan cms:siteType:create VendorName SiteTypeName
+```
+
+For the Pizza site type, the formatting was `Adaptcms SiteTypePizza` - however, if you do not include the prefix `SiteType`, it will be prepended automatically anyways.
 
 **Base Config**
 
@@ -30,9 +36,10 @@ src/SiteType/SiteTypePizza.php
 */
 public $config = [
   [
-    'name'     => 'Site Name',
-    'field'     => 'Adaptcms/FieldText',
-    'required' => true
+    'name'               => 'Site Name',
+    'field'               => 'Adaptcms/FieldText',
+    'is_required_create' => true,
+    'is_required_edit'   => true
   ]
 ];
 ```
@@ -51,7 +58,6 @@ public $config = [
   [
     'name'     => 'Site Logo',
     'field'     => 'Adaptcms/FieldImage',
-    'required' => false,
     'meta'     => [
       'mode' => 'single'
     ]
@@ -78,14 +84,16 @@ public $modules = [
     'name'  => 'Location',
     'fields' => [
       [
-        'name'     => 'Title',
-        'field'     => 'Adaptcms/FieldText',
-        'required' => true
+        'name'               => 'Title',
+        'field'               => 'Adaptcms/FieldText',
+        'is_required_create' => true,
+        'is_required_edit'   => true
       ],
       [
-        'name'     => 'Address',
-        'field'     => 'Adaptcms/FieldPlace',
-        'required' => true
+        'name'               => 'Address',
+        'field'               => 'Adaptcms/FieldPlace',
+        'is_required_create' => true,
+        'is_required_edit'   => true
       ],
       [
         'name' => 'Notes',
@@ -118,9 +126,10 @@ public $pages = [
     'url'   => '/about',
     'fields' => [
       [
-        'name'     => 'Body',
-        'field'     => 'Adaptcms/FieldRichText',
-        'required' => true
+        'name'               => 'Body',
+        'field'               => 'Adaptcms/FieldRichText',
+        'is_required_create' => true,
+        'is_required_edit'   => true
       ]
     ]
   ]
