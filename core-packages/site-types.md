@@ -37,7 +37,7 @@ src/SiteType/SiteTypePizza.php
 public $config = [
   [
     'name'               => 'Site Name',
-    'field'               => 'Adaptcms/FieldText',
+    'field'               => 'FieldText',
     'is_required_create' => true,
     'is_required_edit'   => true
   ]
@@ -57,7 +57,7 @@ src/SiteType/SiteTypePizza.php
 public $config = [
   [
     'name'     => 'Site Logo',
-    'field'     => 'Adaptcms/FieldImage',
+    'field'     => 'FieldImage',
     'meta'     => [
       'mode' => 'single'
     ]
@@ -85,19 +85,19 @@ public $modules = [
     'fields' => [
       [
         'name'               => 'Title',
-        'field'               => 'Adaptcms/FieldText',
+        'field'               => 'FieldText',
         'is_required_create' => true,
         'is_required_edit'   => true
       ],
       [
         'name'               => 'Address',
-        'field'               => 'Adaptcms/FieldPlace',
+        'field'               => 'FieldPlace',
         'is_required_create' => true,
         'is_required_edit'   => true
       ],
       [
         'name' => 'Notes',
-        'field' => 'Adaptcms/FieldTextarea'
+        'field' => 'FieldTextarea'
       ]
     ]
   ]
@@ -127,7 +127,7 @@ public $pages = [
     'fields' => [
       [
         'name'               => 'Body',
-        'field'               => 'Adaptcms/FieldRichText',
+        'field'               => 'FieldRichText',
         'is_required_create' => true,
         'is_required_edit'   => true
       ]
