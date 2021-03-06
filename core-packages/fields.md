@@ -144,3 +144,32 @@ You will also see above an `options` array - this can also be configured to set 
 
 The other array key is `action_rules` which enable, or disable showing the field on the relevant page. With the place field, we don't want it showing on the index page nor the search, but should be shown on the create, edit, and show pages when browsing a module.
 
+**Settings Integration**
+
+Currently when creating a site type, there is configuration where a developer may use custom field types for the user to interact with basic configuration of the site type - such as entering in a site name, or uploading a logo. Unlike other use cases, this data is stored within the settings for the site type. This requires a new method which you can implement below. Included in the example is how to get meta data, the column name, how to get the current value and how to set a new value:
+
+```text
+/**
+  * Save To Settings
+  *
+  * @param Model   $model
+  * @param Request $request
+  * @param array   $field
+  * @param string  $settingsKey
+  *
+  * @return void
+  */
+  public function saveToSettings($model, Request $request, array $field, $settingsKey)
+  {
+    $columnName = $field['column_name'];
+    $metaData   = $field['meta'];
+    
+    $currentValue = $model->settings()->get($settingsKey);
+    
+    // set new value
+    $newValue = 'test123';
+    
+    $model->settings()->set($settingsKey, $newValue);
+  }
+```
+
