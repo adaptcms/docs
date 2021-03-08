@@ -173,3 +173,28 @@ Currently when creating a site type, there is configuration where a developer ma
   }
 ```
 
+If your field type has meta information that needs to be passed in to the view where it is being displayed on a settings page, there is a separate method from `withFormMeta` called `withSettingsFormMeta`. Below is an example from `FieldImage` which returns full image meta for use. The model is whichever settings is used for - so for site types, it would be the site type model and have media attached to it to retrieve.
+
+```text
+/**
+* With Settings Form Meta
+*
+* @param Request $request
+* @param object  $model
+* @param string  $columnName
+*
+* @return array
+*/
+public function withSettingsFormMeta(Request $request, $model, string $columnName)
+{
+  $meta = [];
+
+  // set media info to view
+  if (!empty($model)) {
+    $meta = $model->getMedia($columnName);
+  }
+
+  return $meta;
+}
+```
+
