@@ -37,5 +37,12 @@ We know setting permissions sucks, but one day we sat down and found a good set 
 
 If you are unsure of how to handle group management in the command line, we have a tutorial setup on this. Note in the example the group name being used is `dev`, but that name can be quickly replaced in the permissions bash file:
 
-[https://charliepage.gitbook.io/book/tutorials/setup-ubuntu-server-2020\#non-root-user-setup](https://charliepage.gitbook.io/book/tutorials/setup-ubuntu-server-2020#non-root-user-setup)
+{% embed url="https://charliepage.gitbook.io/book/tutorials/setup-ubuntu-server-2020\#non-root-user-setup" %}
+
+If you choose not to run this bash file, keep in mind that read/write/execute permissions will be needed for the below folders:
+
+* bootstrap/cache/
+* storage/
+* app/
+* public/
 
