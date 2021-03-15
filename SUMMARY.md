@@ -12,7 +12,7 @@
 
 * [Requirements](getting-started/requirements.md)
 * [Installation](getting-started/installation.md)
-* [Updating](getting-started/updating.md)
+* [Upgrading](getting-started/updating.md)
 
 ## Core Packages
 
