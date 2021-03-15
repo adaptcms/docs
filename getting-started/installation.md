@@ -45,4 +45,5 @@ If you choose not to run this bash file, keep in mind that read/write/execute pe
 * storage/
 * app/
 * public/
+* database/migrations/
 
