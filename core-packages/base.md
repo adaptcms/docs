@@ -14,6 +14,7 @@ One of the most important functions at this time for Base is the various CLI com
 php artisan cms:command:make {vendor} {package} {commandName}
 php artisan cms:migration:make {vendor} {package} {migrationName}
 php artisan cms:model:make {vendor} {package} {modelName}
+php artisan cms:controller:make {vendor} {package} {controllerName}
 ```
 
 Another useful utility is the ability to get a full list of installed packages, with fields excluded:
