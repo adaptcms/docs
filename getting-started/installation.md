@@ -41,10 +41,11 @@ If you are unsure of how to handle group management in the command line, we have
 
 If you choose not to run this bash file, keep in mind that read/write/execute permissions will be needed for the below folders:
 
-* bootstrap/cache/
-* storage/
 * app/
-* public/
-* packages/
+* bootstrap/cache/
+* config/ \(only for upgrading through the CMS\)
 * database/migrations/
+* packages/
+* public/
+* storage/
 
