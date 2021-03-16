@@ -41,11 +41,16 @@ If you are unsure of how to handle group management in the command line, we have
 
 If you choose not to run this bash file, keep in mind that read/write/execute permissions will be needed for the below folders:
 
-* app/
+* app/ \(only for upgrading through the CMS\)
 * bootstrap/cache/
 * config/ \(only for upgrading through the CMS\)
 * database/migrations/
 * packages/
-* public/
 * storage/
+
+To upgrade through the CMS, the following files will also need to have read/write permissions:
+
+* composer.json
+* package.json
+* VERSION
 
