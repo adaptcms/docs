@@ -27,6 +27,7 @@
 ## Advanced
 
 * [UI](advanced/ui.md)
+* [Optimizing](advanced/optimizing.md)
 
 ## Get Involved
 
