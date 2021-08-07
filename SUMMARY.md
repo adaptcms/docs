@@ -26,6 +26,7 @@
 
 ## Advanced
 
+* [Creating Your Own Package](advanced/creating-your-own-package.md)
 * [UI](advanced/ui.md)
 * [Optimizing](advanced/optimizing.md)
 
